@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b51">
+  <meta name="description" content="中學生 AWDP 備賽：Linux CLI 入門、Web／Pwn／Defender 分流、WAF 修補、備份，以及 patch 打包與提交。">
+  <title>AWDP Lab｜中學生攻防練習室</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23102b51'/%3E%3Cpath d='M8 23 16 8l8 15M12 17h8' fill='none' stroke='%233bceca' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20261011-open">
+  <link rel="stylesheet" href="curriculum.css?v=20261011-open">
+  <script src="locale.js?v=20261011-open" defer></script>
+  <script src="legacy-en.js?v=20261011-open" defer></script>
+  <script src="resources-data.js?v=20261011-open" defer></script>
+  <script src="curriculum.js?v=20261011-open" defer></script>
+  <script src="linux-course.js?v=20261011-open" defer></script>
+  <script src="resource-course.js?v=20261011-open" defer></script>
+  <script src="app.js?v=20261011-open" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-skip>跳至主要內容</a>
+  <aside class="sidebar" aria-label="主導覽">
+    <a class="brand" href="#overview"><span class="brand-mark">A<span>↗</span></span><span>AWDP<span class="brand-small">LAB / 中學生攻防練習室</span></span></a>
+    <div class="nav-label">你的訓練空間</div>
+    <nav id="navigation">
+      <a href="#overview" data-view="overview"><span class="nav-icon">▦</span>備賽總覽</a>
+      <a href="#linux" data-view="linux"><span class="nav-icon">$</span>Linux 基礎</a>
+      <a href="#tracks" data-view="tracks"><span class="nav-icon">⌘</span>Web / Pwn / Defender</a>
+      <a href="#defender" data-view="defender"><span class="nav-icon">◇</span>防禦速查與 WAF</a>
+      <a href="#delivery" data-view="delivery"><span class="nav-icon">▣</span>Patch 打包與提交</a>
+      <a href="#challenges" data-view="challenges"><span class="nav-icon">⌘</span>靶場練習<span class="nav-count">06</span></a>
+      <a href="#patch" data-view="patch"><span class="nav-icon">◇</span>修補實驗</a>
+      <a href="#round" data-view="round"><span class="nav-icon">◷</span>輪次演練</a>
+      <a href="#guide" data-view="guide"><span class="nav-icon">▤</span>備賽指南</a>
+      <a href="#competition" data-view="competition"><span class="nav-icon">⚑</span>比賽資訊</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="pill dark">學生教學版</span><p>在授權靶場裡探索，<br>讓好奇心成為解題能力。</p><div class="profile"><span class="avatar">學</span><div>我的練習進度<small>只儲存在這個瀏覽器</small></div></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div><span class="crumb">TRAINING SPACE</span><span class="slash">/</span><span id="breadcrumb">學習總覽</span></div><div class="topbar-actions"><div class="language-switch" data-language-control role="group" aria-label="Language / 語言"><button type="button" data-language="zh" lang="zh-Hant">中文</button><button type="button" data-language="en" lang="en">English</button></div><a class="event-tag" href="#competition"><span class="event-mark">M</span><span>MO​CSCTF 2026</span><span class="tag-secondary">澳門學生組</span></a></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer>AWDP Lab · 教學演練版本<span>依據 MO​CSCTF 2026 官網及業餘進修中心公告設計</span></footer>
+  </div>
+  <dialog id="challenge-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
